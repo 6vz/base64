@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>B64 <-> Text Conventer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+  </head>
+  <body class="show-at-middle">
+  <section class="section">
+    <div class="box is-centered" width="50%">
+        <h1 class="title">Base64 Tools
+        <p class="is-normal content">Made with fun using Vanilla JS & Bulma</p></h1>
+       <textarea class="textarea is-primary" placeholder="Text to Convert" rows="1" id="toConvert"></textarea><br>
+       <button class="button is-danger" id="beginConvert" onclick="convprocess()">Convert: Text -> Base64</button>
+       <button class="button is-success" id="beginConvert" onclick="reverseconvprocess()">Convert: Base64 -> Text</button>
+      </div>
+      <br>
+      <div class="box is-centered">
+          <p class="title">Conversion Results</p>
+          <pre id="resultHolder" class="result">Did you know that Cat families usually play best in even numbers. Cats and kittens should be acquired in pairs whenever possible</pre>
+      </div>
+      <br>
+      <div class="box">
+          <p class="title">Information about the B64 project</p>
+          <p>This project was created for <b>FUN</b>, i was just playing around with Bulma and Vanilla JS. This site may be buggy as fuck, if you want to fix something, please commit PR. Thanks :)</p>
+          <br>
+          <b>Contributors: </b>6vz, dejwidson, <i>[you can be here]</i>
+      </div>
+  </section>
+  </body>
+</html>
